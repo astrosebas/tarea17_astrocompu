@@ -21,3 +21,6 @@ hdu_sky.data = sky          #Data del header
 hdu_sky.writeto('SkyNoise.fits')
 
 print("Tarea 17 git con programa de la Tarea 3 (Ruido del cielo)")
+
+def Msj(X):
+   print(X)
