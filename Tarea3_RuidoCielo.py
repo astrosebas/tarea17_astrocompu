@@ -19,3 +19,5 @@ sky = np.random.normal(mean,sigma,(size_x,size_y))
 hdu_sky = fits.PrimaryHDU()
 hdu_sky.data = sky 
 hdu_sky.writeto('ruido_cielo2.fits')
+
+print("Tarea 17 git")
