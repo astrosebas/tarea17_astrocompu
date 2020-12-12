@@ -3,20 +3,20 @@
 """
 @author: seba
 """
-
-import numpy as np
+#Importando paqueterías
+import numpy as NP
 import sys
-from astropy.io import fits
+from astropy.io import FITS
 
-size_x = 1000
-size_y = 1000
+size_x = 1000 #Tamaño de la imagen en x
+size_y = 1000 #Tamaño de la imagen en y
 
 mean = 0.05
 sigma = 0.44
 
-sky = np.random.normal(mean,sigma,(size_x,size_y))
+sky = NP.random.normal(mean,sigma,(size_x,size_y))
 
-hdu_sky = fits.PrimaryHDU() #Fits
+hdu_sky = FITS.PrimaryHDU() #Fits
 hdu_sky.data = sky          #Data del header
 hdu_sky.writeto('SkyNoise.fits')
 
